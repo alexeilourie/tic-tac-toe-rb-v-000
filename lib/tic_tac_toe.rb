@@ -124,7 +124,7 @@ end
 def winner(board)
   if !!won?(board)
     a = won?(board)
-    return a[0]
+    return board(a[0])
   else
     return nil
   end
