@@ -5,7 +5,7 @@ def play(board)
   if winner(board) != nil
     puts "Congradulations player #{winner(board)}!"
   elsif draw?(board)
-    puts "It's a draw!"
+    puts "Cat's Game!"
   end
 end
 
