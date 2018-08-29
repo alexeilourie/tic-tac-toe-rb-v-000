@@ -90,7 +90,7 @@ def won?(board)
       win_check = 1
     end
   end
-  if win_check > 1
+  if win_check > 0
     return win_comb
   else
     return false
