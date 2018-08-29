@@ -126,6 +126,6 @@ def winner(board)
     a = won?(board)[0]
     return a
   else
-    return false
+    return nil
   end
 end
