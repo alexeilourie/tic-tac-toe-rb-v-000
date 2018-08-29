@@ -79,5 +79,20 @@ def position_taken?(board, index)
 end
 
 def won?(board)
-  
+  win_comb = []
+  win_check = 0
+  WIN_COMBINATIONS.each do |comb|
+    pos1 = comb[0]
+    pos2 = comb[1]
+    pos3 = comb[2]
+    if (pos1 == "X" && pos2 == "X" && pos3 == "X") || (pos1 == "O" && pos2 == "O" && pos3 == "O")
+      win_comb = comb
+      win_check = 1
+    end
+  end
+  if win_check == 1
+    return win_comb
+  else
+    return false
+  end
 end
