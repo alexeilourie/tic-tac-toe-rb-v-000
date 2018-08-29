@@ -2,7 +2,11 @@ def play(board)
   while !over?(board)
     turn(board)
   end
-  if won?
+  if winner(board) != nil
+    puts "Congradulations player #{winner(board)}!"
+  elsif draw?(board)
+    puts "It's a draw!"
+  end
 end
 
 def turn(board)
