@@ -1,9 +1,16 @@
+def play(board)
+  while !over?(board)
+    turn(board)
+  end
+  if won?
+end
+
 def turn(board)
   puts "Please enter 1-9:"
   input = gets
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index, "X")
+    move(board, index, current_player(board))
     display_board(board)
   else
     puts "Invalid input. Please enter 1-9"
