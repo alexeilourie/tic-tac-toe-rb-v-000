@@ -85,7 +85,7 @@ def won?(board)
     pos1 = comb[0]
     pos2 = comb[1]
     pos3 = comb[2]
-    if (board(pos1) == "X" && board(pos2) == "X" && board(pos3) == "X") || (board(pos1) == "O" && board(pos2) == "O" && board(pos3) == "O")
+    if (board[pos1] == "X" && board[pos2] == "X" && board[pos3] == "X") || (board[pos1] == "O" && board[pos2] == "O" && board[pos3] == "O")
       win_comb = comb
       win_check = 1
     end
